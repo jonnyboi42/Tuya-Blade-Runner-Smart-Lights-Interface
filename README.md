@@ -17,3 +17,4 @@ To get started with this project, you will need the following:
 
 1. **Tuya Developer Account**: Create an account on the [Tuya Developer Platform](https://developer.tuya.com/en/) to access Tuya's API and configure your devices.
 2. **Tuya Smart Light Strips or Bulbs**: Ensure you have Tuya-compatible smart lights set up in your account.
+   More Documentation for set-up is Coming Soon....
