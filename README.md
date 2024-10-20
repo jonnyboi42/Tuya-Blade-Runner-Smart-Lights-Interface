@@ -31,3 +31,10 @@ The frontend of this project is built using **React** and **Vite**. To run the f
 2. Make sure all necessary packages are installed by running:
    ```bash
    npm install
+3. Once all necessary packages have been installed, you need to create a .env folder in the root directory of the frontend folder.
+4. At the moment, only one light is added, in your .env you will need to add a variable VITE_DEVICE1_KEY=yourtuyadeviceID
+5. Once you have configured your .env you are now ready to run the front end.
+6. In the terminal run:
+   ```bash
+   npm start dev
+7. Your Front End Should now be running, it is optimized for a 7 inch LED Touch Display
