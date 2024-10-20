@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+/* font-family: "Athiti", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: "Bai Jamjuree", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: "Advent Pro", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: "Archivo", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Jost", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Bai Jamjuree", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: "Righteous", sans-serif; */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* .app-container{
+    width: 1024px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b0b0b; 
+    display: flex;
+    justify-content: center;
+    
+    background-image: url("src/assets/interfaceItems/joibackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+} */
+
+
+
+.app-container {
+    position: relative; /* Set position to relative for absolute positioning of the video */
+    width: 1024px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none; /* Remove background image if video is the primary background */
+}
+
+/* Video styling */
+.background-video {
+    position: absolute; /* Position the video absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+    z-index: -1; /* Ensure the video stays behind other content */
+}
+
+/* Overlay styling */
+.app-container::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8); /* Black overlay with 50% opacity */
+    z-index: 0; /* Ensure the overlay sits above the video but below other content */
+}
+
+/* Content styling */
+.app-container-interface,
+.app-container-content {
+    position: relative; /* Ensure this content is above the video and overlay */
+    z-index: 1; /* Ensure it is above the background video and overlay */
+}
+
+.app-container-interface img {
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 2));
+    opacity: 0.9;
+}
+
+.app-container-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.company-name{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.company-name > p:nth-of-type(1){
+    color: white;
+    /* font-family: "Athiti", sans-serif; */
+    font-family: "Righteous", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), /* Main glow */
+    0 0 15px rgba(255, 255, 255, 5), /* Extended glow */
+    0 0 30px rgba(255, 255, 255, 0.9); /* Fainter extended glow */
+}
+
+.model-information{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 200;
+    font-size: .6rem;
+    letter-spacing: .3rem;
+    margin-top: 15em;
+    padding-left: 10px;
+    
+    
+}
+
+
+.model-information p{
+    margin: 0;
+}
+
+/* .rooms{
+    display: flex;
+} */
+
+.middle-content{
+    display: flex;
+    align-items: center;
+}
+
+.rooms{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.rooms p{
+    color: white;
+    font-family: "Archivo", sans-serif;
+    font-weight: 200;
+    letter-spacing: .4rem;
+}
+
+
+
+.room-1, .room-2, .room-3{
+    display: flex;
+    gap: 3em;
+    
+}
+
+
+
+.rooms button{
+   
+    font-family: "Advent Pro", sans-serif;
+    font-style: normal;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    text-align: center;
+    padding: 0;
+    width: 200px; /* Adjust width */
+    height: 40px;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    text-shadow: 3px 3px 5px rgba(214, 213, 213, 5); /* Offset shadow */
+    box-shadow: 3px 3px 5px rgba(116, 115, 118, 0.6); /* Offset shadow */;
+    
+}
+
+
+.rooms button:active {
+    transform: translateY(2px); /* Move button slightly down */
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.6), /* Inner shadow when pressed */
+                1px 1px 2px rgba(116, 115, 118, 0.4); /* Reduced outer shadow */
+}
+
+
+
+
+
+
+
+
+/* Right Content */
+.right-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emanator > p:nth-of-type(1){
+    font-family: "Jost", sans-serif;
+    color: rgb(236, 233, 233);
+    font-weight: 200;
+    font-size: 1.4rem;
+    width: 200px;
+    letter-spacing: 4px;
+    text-align: center;
+    
+}
+
+.corporation-info{
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: .6rem;
+    width: 142px;
+    margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.demo {
+    width: 60px; /* Further reduced size */
+    height: 60px; /* Further reduced size */
+    border-radius: 100%;
+
+    animation: spin 5s infinite linear;
+}
+  
+  .circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 3px solid rgba(253, 253, 253, 0.3); /* Slightly smaller border */
+    border-right: none;
+    border-top: none;
+    background-clip: padding-box;
+    box-shadow: inset 0px 0px 6px rgba(1, 76, 76, 0.85); /* Slightly smaller shadow */
+    animation: spin 2s infinite linear;
+  }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle:nth-of-type(1) {
+  transform: rotate(70deg);
+}
+
+.circle:nth-of-type(2) {
+  transform: rotate(140deg);
+}
+
+.circle:nth-of-type(3) {
+  transform: rotate(210deg);
+}
+
+.circle:nth-of-type(4) {
+  transform: rotate(280deg);
+}
+
+.circle:nth-of-type(5) {
+  transform: rotate(350deg);
+}
+
+
+
+
+
+
+
+
