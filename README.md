@@ -20,7 +20,7 @@ To get started with this project, you will need the following:
 2. **Tuya Smart Light Strips or Bulbs**: Ensure you have Tuya-compatible smart lights set up in your account.
 
 ## Setting Up Your Tuya Account
-Once your Tuya developer account is created, you will need to start a new cloud project. At this point, you can refer to a YouTube video to learn how to find your device IDs. The device ID will be required for the config file in the **backend** folder. 
+Once your Tuya developer account is created, you will need to start a new cloud project. At this point, you can refer to a YouTube video https://www.youtube.com/watch?v=qVZJyHJsF9A&t=15s to learn how to find your device IDs. The device ID will be required for the config file in the **backend** folder. 
 
 You will have a boilerplate `.env` file that contains this ID, as well as the Tuya secret key variable. I will update these boilerplates later.
 
