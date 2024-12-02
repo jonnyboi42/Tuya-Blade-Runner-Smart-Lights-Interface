@@ -6,8 +6,8 @@ const path = './token.json';
 
 const config = {
   host: 'https://openapi.tuyaus.com', // Update with your region if needed
-  accessKey: 'tsxp3fwh879hvphkv7vf',  // Your access key
-  secretKey: 'e3c8b61ad046424dacd93b2a111a9f11',  // Your secret key
+  accessKey: '',  // Your access key
+  secretKey: '',  // Your secret key
   
 };
 
