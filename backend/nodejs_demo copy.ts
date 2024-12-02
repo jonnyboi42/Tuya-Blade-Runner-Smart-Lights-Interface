@@ -125,16 +125,3 @@ async function loadToken() {
 }
 
 
-// (async () => {
-//   try {
-//     // Load token from file if available
-//     await loadToken();
-//     await controlDevice('eb50e59e3a78109725iina', true);
-//   } catch (error) {
-//     if (error instanceof Error) {
-//       console.error('Error:', error.message);
-//     } else {
-//       console.error('Unexpected error:', error);
-//     }
-//   }
-// })();
